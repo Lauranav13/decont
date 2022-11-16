@@ -4,3 +4,4 @@ do
 	bash scripts/download.sh $url data/ yes
 done
 
+bash scripts/download.sh https://bioinformatics.cnio.es/data/courses/decont/contaminants.fasta.gz res yes 
