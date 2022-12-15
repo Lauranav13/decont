@@ -4,7 +4,12 @@ do
 	bash scripts/download.sh $url data/ yes
 done
 
+rm data/*.fastq
+
+echo "Downloading contaminants"
+
 bash scripts/download.sh https://bioinformatics.cnio.es/data/courses/decont/contaminants.fasta.gz res yes 
+sed /'small nuclear'/d res/contaminants.fasta 
 
 bash scripts/index.sh res/contaminants.fasta res/contaminants_idx
 
