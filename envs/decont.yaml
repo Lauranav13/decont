@@ -1,0 +1,16 @@
+name: decont
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - fastqc
+  - seqtk
+  - cutadapt
+  - star
+  - multiqc
+  - seqkit
+  - ca-certificates
+  - certifi
+  - openssl
+prefix: /home/vant/mambaforge/envs/decont
