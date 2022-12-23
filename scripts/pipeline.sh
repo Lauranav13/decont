@@ -41,5 +41,5 @@ do
 done
 
 echo "Finally exporting file with environment information"
-
+	mkdir -p envs
 	conda env export --from-history > envs/decont.yaml
